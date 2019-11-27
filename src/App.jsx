@@ -1,12 +1,17 @@
-const browsers = ['IE 11', 'Edge 15', 'Safari 10', 'Firefox 50', 'Chrome 49'];
-const workingBrowsers = Array.from(browsers, c => `works in ${c},`);
-const message = workingBrowsers.join(' ');
+class HelloWorld extends React.Component {
+  render() {
+    const continents = ['Africa','America','Asia','Australia','Europe'];
+    const helloContinents = Array.from(continents, c => `Hello ${c}!`);
+    const message = helloContinents.join(' ');
 
-const element = (
-  <div title="Outer div">
-    <h1>React Template</h1>
-    <p>{message}</p>
-  </div>
-);
+    return (
+      <div title="Outer div">
+        <h1>{message}</h1>
+      </div>
+    );
+  }
+}
+
+const element = <HelloWorld />;
 
 ReactDOM.render(element, document.getElementById('contents'));
