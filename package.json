@@ -1,7 +1,7 @@
 {
-  "name": "printers-manager",
+  "name": "react-template",
   "version": "1.0.0",
-  "description": "Rectorado UPM Printers Manager",
+  "description": "React Template",
   "main": "index.js",
   "scripts": {
     "start": "nodemon -w server server/server.js",
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Informatica Rectorado",
-  "repository": "github.com:chenlo/printers-manager.git",
+  "repository": "github.com:chenlo/react-template.git",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
